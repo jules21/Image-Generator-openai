@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Openai Image Generator</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <h1>Open AI Image Generator</h1>
+            <p>
+                <a href="https://beta.openai.com">Open API Docs</a>
+            </p>
+        </nav>
+    </header>
+    <main id="content">
+        <div id="msg"></div>
+        <section id="content-form">
+            <h3>Describe An Image</h3>
+            <form id="submit-form">
+                <input type="text" id="prompt" placeholder="enter your image spec">
+                <select name="size" id="size">
+                    <option value="">Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+    
+                <button class="btn">Generate</button>
+            </form>
+        </section>
+    </main>
+    <section id="content-img">
+        <img src="" alt="" id="image">
+    </section>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>

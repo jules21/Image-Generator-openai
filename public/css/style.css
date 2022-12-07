@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark-color:#333;
+    --primary-color:#F8B64D;
+    --white-color:#fff;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+/* utilities */
+.btn{
+    display:  inline-block;
+    border: none;
+    background: var(--dark-color);
+    color: var(--white-color);
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* navbar */
+
+header{
+    background: var(--dark-color);
+    color: var(--white-color);
+    padding: .5rem;
+}
+/* TODO: stick  navbar top */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* content - img-form */
+#content{
+    background-color:var(--primary-color);
+    padding: 4rem;
+}
+
+#content-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#submit-form input,
+#submit-form select{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    margin-bottom: 1rem;
+}
+
+/* content - result */
+
+#content-img{
+    padding: 2rem;   
+}
+
+#content-img img{
+    display: block;
+    margin: auto;
+}
